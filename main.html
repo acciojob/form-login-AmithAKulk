@@ -8,23 +8,17 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h2>Fill out the form:</h2>
-  <form id="myForm">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="First Name"><br><br>
-
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="Last Name"><br><br>
-
-    <label for="phoneNumber">Phone Number:</label>
-    <input type="text" id="phoneNumber" name="Phone Number"><br><br>
-
-    <label for="email">Email ID:</label>
-    <input type="text" id="email" name="Email ID"><br><br>
-
-    <input type="submit" value="Submit">
-  </form>
-
+	<form id="myForm">
+	<label>First Name:</label>
+	<input type="text" name="First Name" id="fname"></input><br>
+	<label>Last Name:</label>
+	<input type="text" name="Last Name"id="lname"></input><br>
+	<label>Phone Number:</label>
+	<input type="tel" name="Phone Number"id="Pnum"></input><br>
+	<label>Email ID:</label>
+	<input type="email" name="Email ID"id="eid"></input><br>
+	<button type="submit"onclick="displayFormValues()">Submit</button>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 

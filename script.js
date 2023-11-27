@@ -1,15 +1,8 @@
-document.getElementById("myForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent the default form submission behavior
+function displayFormValues(){ 
+	var name=document.getElementById('fname').value;
+	var last=document.getElementById('lname').value;
+	var phone=document.getElementById('Pnum').value;
+	var email=document.getElementById('eid').value;
 
-      // Get form data
-      const formData = new FormData(this);
-      let result = "";
-
-      // Construct the result string
-      for (let [key, value] of formData.entries()) {
-        result += key + ": " + value + "\n";
-      }
-
-      // Display the result using alert with the specified format
-      alert(result);
-    });
+	alert('First Name:'+name+'\nLast Name:'+last+'\nPhone Number:'+phone+'\nEmail ID:'+email);
+}
