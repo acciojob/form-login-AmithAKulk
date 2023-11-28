@@ -1,8 +1,13 @@
-function displayFormValues(){ 
-	var name=document.getElementById('fname').value;
-	var last=document.getElementById('lname').value;
-	var phone=document.getElementById('Pnum').value;
-	var email=document.getElementById('eid').value;
+const first = document.getElementById('first');
+const last = document.getElementById('last');
+const number = document.getElementById('number');
+const email = document.getElementById('email');
+const btn = document.getElementById('btn');
 
-	alert('First Name:'+name+'\nLast Name:'+last+'\nPhone Number:'+phone+'\nEmail ID:'+email);
-}
+btn.addEventListener('click', () => {
+	// event.preventDefault();
+	alert(`First Name: ${first.value}
+Last Name: ${last.value}
+Phone Number: ${number.value}
+Email ID: ${email.value}`);
+})
